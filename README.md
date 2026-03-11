@@ -117,6 +117,8 @@ Detailed analysis of web-facing applications.
 ### 4.1 Web Discovery (HTTPX)
 
 ```bash
+cat subs.txt | httpx --random-agent --status-code --title --server -td -cl | tee liv.txt
+
 httpx -list allsubs.txt -status-code -content-length -content-type -line-count -title -body-preview -server -tech-detect -probe-all-ips -include-response -follow-host-redirects -random-agent -o httpx_full.txt
 
 ```
@@ -129,6 +131,7 @@ cat live_web.txt | nuclei -t cves/ -t exposures/ -t misconfiguration/ -severity 
 
 # Subdomain Takeover Check
 subzy run --targets resolved.txt
+subzy run --targets subnasa.txt --concurrency 100 --hide_fails --verify_ssl
 
 ```
 
