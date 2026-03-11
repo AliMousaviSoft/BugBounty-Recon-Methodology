@@ -131,7 +131,7 @@ cat live_web.txt | nuclei -t cves/ -t exposures/ -t misconfiguration/ -severity 
 
 # Subdomain Takeover Check
 subzy run --targets resolved.txt
-subzy run --targets subnasa.txt --concurrency 100 --hide_fails --verify_ssl
+subzy run --targets subs.txt --concurrency 100 --hide_fails --verify_ssl
 
 ```
 
