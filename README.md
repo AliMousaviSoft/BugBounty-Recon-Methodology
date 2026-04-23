@@ -27,6 +27,9 @@ curl -s 'https://subdomainfinder.c99.nl/scans/2025-12-29/target.com' | grep -Eo 
 subfinder -d target.com -all -recursive -o sub1.txt
 findomain -t target.com | tee sub2.txt
 amass enum -passive -d target.com -norecursive -noalts -o sub3.txt
+knockpy -d target.com --recon --bruteforce
+subrake -d target.com
+python sublist3r.py -v -d target.com
 Subenum -d target.com | tee sub4.txt
 Chaos -d target.com | tee sub5.txt
 github-subdomain -d target.com | tee sub6.txt
