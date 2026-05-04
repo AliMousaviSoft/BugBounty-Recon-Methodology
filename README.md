@@ -99,7 +99,7 @@ naabu -list subs.txt -p - -exclude-ports 80,443,21,22,25 -o allports.txt
 
 ```
 
-### 3.2 VHost & Subdomain Fuzzing
+### 3.2 VHost & Subdomain Fuzzing 
 
 ```bash
 # VHost discovery using FFUF
