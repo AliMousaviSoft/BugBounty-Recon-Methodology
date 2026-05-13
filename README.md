@@ -96,6 +96,7 @@ naabu -list resolved.txt -c 50 -nmap-cli 'nmap -sV -sC' -o naabu_full.txt
 naabu -list subs.txt -top-ports 1000 -exclude-ports 80,443,21,22,25 -o top1000ports.txt
 naabu -list subs.txt -p - -exclude-ports 80,443,21,22,25 -o allports.txt
 rustscan -b 500 -a target.com --top -- -sC -sV -Pn
+rustscan -b 500 -a 10.1.49.196 -- -sC -sV -Pn
 
 
 ```
