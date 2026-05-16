@@ -151,6 +151,9 @@ Mining JavaScript and archives for hidden secrets and sensitive files.
 ```bash
 waymore -i target.com -mode U -oU urls.txt
 katana -u target.com -kf robotstxt,sitemapxml -o katana_urls.txt
+katana -u https://target.com/ -jc -js-crawl -kf all
+
+
 
 # Extract sensitive files (Docs, DBs, Backups)
 cat urls.txt | grep -E "\.xls|\.xml|\.xlsx|\.json|\.pdf|\.sql|\.doc|\.zip|\.bak|\.config|\.yaml" | tee sensitive_files.txt
