@@ -154,6 +154,8 @@ Mining JavaScript and archives for hidden secrets and sensitive files.
 waymore -i target.com -mode U -oU urls.txt
 katana -u target.com -kf robotstxt,sitemapxml -o katana_urls.txt
 katana -u https://target.com/ -jc -js-crawl -kf all
+cat subs.txt | katana -jc -jsl | tee katana.txt                                                                        
+
 
 
 
